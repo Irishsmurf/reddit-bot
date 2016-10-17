@@ -8,7 +8,9 @@ maven_jar(
 )
 maven_jar(
   name='jraw',
+  #artifact='net.dean.jraw:JRAW:0.7.0.3',
   artifact='net.dean.jraw:JRAW:0.6.1',
+  repository='http://jcenter.bintray.com'
 )
 maven_jar(
   name='okhttp',
@@ -19,8 +21,13 @@ maven_jar(
   artifact='org.codehaus.jackson:jackson-jaxrs:1.9.13',
 )
 maven_jar(
+  name='javax_javaee',
+  artifact='javax:javaee-api:7.0'
+  )
+maven_jar(
   name='jackson_mapper_asl',
-  artifact='org.codehaus.jackson:jackson-mappers-asl:1.9.13',
+  artifact='org.codehaus.jackson:jackson-core-asl:1.9.13',
+  #server='http://central.maven.org/maven2'
 )
 maven_jar(
   name='slf4j',
@@ -50,4 +57,3 @@ maven_jar(
   name='guice',
   artifact='com.google.inject:guice:3.0',
 )
-

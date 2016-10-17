@@ -1,0 +1,29 @@
+java_library(
+  name='utils_lib',
+  visibility=['//visibility:public'],
+  srcs=[
+    'FormattingUtils.java',
+    'PropertiesReader.java',
+    'RedditPrefixes.java',
+  ],
+  deps=[
+    '@log4j//jar',
+  ]
+)
+
+java_library(
+    name='response_comment',
+    visibility=['//visibility:public'],
+    srcs=[
+    'ResponseCommentCreator.java',
+    'ResponseCommentCreatorInterface.java',
+    ],
+    deps=[
+    ':utils_lib',
+    '//src/main/java/pl/jpetryk/redditbot/model:models',
+    '@joda_time//jar',
+    '@javax_javaee//jar',
+    '@guava//jar',
+    '@guice//jar'
+    ]
+)

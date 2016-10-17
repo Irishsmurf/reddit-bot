@@ -1,0 +1,26 @@
+java_library(
+  name='connectors',
+  visibility=['//visibility:public'],
+  srcs=[
+    'CustomRedditClient.java',
+    'ImgurConnector.java',
+    'ImgurConnectorInterface.java',
+    'JrawRedditConnector.java',
+    'RedditConnectorInterface.java',
+    'Twitter4JConnector.java',
+    'TwitterConnectorInterface.java',
+  ],
+  deps=[
+    '//src/main/java/pl/jpetryk/redditbot/exceptions:exceptions',
+    '//src/main/java/pl/jpetryk/redditbot/model:models',
+    '@javax_javaee//jar',
+    '@guava//jar',
+    '@twitter4j//jar',
+    '@jackson_jaxrs//jar',
+    '@jackson_mapper_asl//jar',
+    '@joda_time//jar',
+    '@jraw//jar',
+    '@okhttp//jar',
+    '@json//jar',
+  ]
+  )

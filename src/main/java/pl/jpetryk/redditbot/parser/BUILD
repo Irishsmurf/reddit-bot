@@ -1,0 +1,12 @@
+java_library(
+  name='parser',
+  visibility=['//visibility:public'],
+  srcs=[
+    'BaseCommentParser.java',
+    'CommentParser.java',
+  ],
+  deps=[
+    '//src/main/java/pl/jpetryk/redditbot/model:models',
+    '@javax_javaee//jar',
+  ],
+)

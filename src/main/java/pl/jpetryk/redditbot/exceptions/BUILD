@@ -1,0 +1,13 @@
+java_library(
+  name='exceptions',
+  visibility=['//visibility:public'],
+  srcs=[
+    'ImgurException.java',
+    'NetworkConnectionException.java',
+    'RedditApiException.java',
+    'TwitterApiException.java',
+    ],
+  deps=[
+    '@twitter4j//jar',
+  ]
+)
