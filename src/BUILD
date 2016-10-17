@@ -12,9 +12,13 @@ java_binary(
     '//src/main/java/pl/jpetryk/redditbot/parser',
     '//src/main/java/pl/jpetryk/redditbot/utils:response_comment',
     '//src/main/java/pl/jpetryk/redditbot/utils:utils_lib',
+    '@aopalliance//jar',
     '@log4j//jar',
     '@guava//jar',
     '@guice//jar',
+  ],
+  data=[
+    '//resources:bot.properties',
   ]
 )
 

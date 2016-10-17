@@ -57,3 +57,7 @@ maven_jar(
   name='guice',
   artifact='com.google.inject:guice:3.0',
 )
+maven_jar(
+  name='aopalliance',
+  artifact='aopalliance:aopalliance:1.0',
+  )
