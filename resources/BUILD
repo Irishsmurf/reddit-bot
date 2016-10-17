@@ -3,6 +3,8 @@ exports_files(
     'bot.properties',
     'testbot.properties',
     'twitter.properties',
-    'template/template.properties'
+    'template/template.properties',
+    'template/footer-template',
+    'template/reply-template'
   ]
 )

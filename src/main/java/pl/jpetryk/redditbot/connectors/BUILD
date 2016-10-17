@@ -22,5 +22,8 @@ java_library(
     '@jraw//jar',
     '@okhttp//jar',
     '@json//jar',
+  ],
+  data=[
+    '//resources:bot.properties',
   ]
-  )
+)

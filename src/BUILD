@@ -19,7 +19,16 @@ java_binary(
   ],
   data=[
     '//resources:bot.properties',
+    '//resources:twitter.properties',
+    '//resources:testbot.properties',
+    '//resources:template/template.properties',
+    '//resources:template/reply-template',
+    '//resources:template/footer-template'
   ]
+)
+
+java_test(
+  name='bot_test',
 )
 
 java_library(
